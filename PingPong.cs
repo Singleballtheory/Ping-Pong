@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace Models
-{
+namespace Game.Models {
+
   public class PingPong
   {
-    public List<string> MakePongList(int number)
+    public static List<string> MakePongList(int number)
     {
       List<string> pongList = new List<string> {};
-
       for (int i = 1; i <= number; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
           pongList.Add("ping-pong");
